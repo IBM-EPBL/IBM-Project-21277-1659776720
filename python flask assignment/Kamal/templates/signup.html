@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>SIGNUP PAGE</title>
+    {% endblock%}
+
+    {% block body %}
+    <h1 class="su">SIGNUP PAGE</h1><br>
+
+    <form action="/signup"  method="post" class="signup">
+      <div class="signup">
+       <label >Name</label><br>
+       <input type="text" name="vasan"><br><br>
+       <label >Email</label><br>
+       <input type="text " name="vasan2001pmgr@gmail.com"><br><br>
+       <label >Phone</label><br>
+       <input type="number" name="6383999355"><br><br>
+       <label >Password</label><br>
+       <input type="password" name="vasan000"><br><br>
+       <label >Retype-password</label><br>
+       <input type="password" name="vasan000"><br><br>
+       <input type="submit" class="btn btn-primary">
+      </div>
+    </form>
+    {% endblock%}
