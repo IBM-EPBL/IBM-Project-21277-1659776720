@@ -1,0 +1,62 @@
+html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Side Menu Bar</title> 
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   </head>
+   <body>
+      <ul>
+         <li class="active"><a href="#">Home</a></li>
+         <li><a href="#Covid19">Covid19</a></li>
+         <li><a href="#State News">State News</a></li>
+         <li><a href="#Sports">Sports</a></li>
+         <li><a href="#National News">National News</a></li>
+         <li><a href="#International News">International News</a></li>
+         <li><a href="#Buisness News">Buisness News</a></li>
+         <li><a href="#Technology News">Technology News</a></li>
+         <li><a class="contact" href="#contact">Contact</a></li>
+      </ul>
+      <section>
+         <i class="fas fa-bars"></i>
+         <div class="sec1"></div>
+         <h2 id="Covid19">
+<h2 id="State News">
+            State News Section
+         </h2>
+ <div class="sec3"></div>
+         <h2 id="Sports">
+            Sports Section
+         </h2>
+div class="sec4"></div>
+         <h2 id="National News">
+            National News Section
+         </h2>
+<div class="sec5"></div>
+         <h2 id="International News">
+            International News Section
+         </h2>
+<div class="sec6"></div>
+         <h2 id="Buisness News">
+            Buisness News Section
+         </h2>
+<div class="sec7"></div>
+         <h2 id="Technology News">
+            Technology News Section
+         </h2>
+</section>
+    <script>
+         $(document).ready(function(){
+           $('i').click(function(){
+             $('ul').toggleClass('ul_show');
+             $('section').toggleClass('slide_image');
+           });
+           $('li').click(function(){
+             $(this).addClass('active').siblings().removeClass('active');
+           });
+         });
+         
+      </script>
+   </body>
+</html
